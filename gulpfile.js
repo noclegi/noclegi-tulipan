@@ -13,6 +13,7 @@ gulp.task('compile-stylus', function() {
 gulp.task('start-server', ['compile-stylus'], function() {
   var port = process.env.PORT | 3000;
   var server = new Server();
-  server.listen(port);
   console.log('Listening at port ' + port);
+  server.listen(port);
 });
+

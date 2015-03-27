@@ -1,8 +1,64 @@
 html(xmlns='http://www.w3.org/1999/xhtml', lang='pl')
-head
-	link(href='/all.css', media='screen', rel='stylesheet', type='text/css')
-	script(type='text/javascript', src='js/all.js')
-	title Example jade page
-	meta(http-equiv='Content-Type', content='text/html;charset=utf-8')
-	body
-			header This is header text
+	head
+		link(href='/all.css', media='screen', rel='stylesheet', type='text/css')
+		link(href='/css/plugins.css', media='screen', rel='stylesheet', type='text/css')
+		link(href='/css/fonts/OpenSans.css', media='screen', rel='stylesheet', type='text/css')
+		title Noclegi Tulipan | Noclegi pracownicze, pokoje w Brzeźnie koło Konina
+		meta(http-equiv='Content-Type', content='text/html;charset=utf-8')
+		meta(http-equiv='Content-Language', content='pl')
+		meta(name='language', content='pl')
+		meta(name='description', content='Oferujemy tanie noclegi, kwatery pracownicze koło Konina. Pokoje jedno, dwu, trzy lub cztero osobowe. Telewizja, internet, WiFi, ogród i kuchnia do wyłącznej dyspozycji gości. Cena noclegu 20 zł za osobę.')
+		meta(name='keywords', content='noclegi, Konin, kwatery, pracownicze, pensjonat, hotel, Brzeńno, autostrada, motel, agroturystyka, ogród, dom wypoczynkowy, wczasy, grill, swoboda, internet, wifi, telewizja')
+		body
+			.body-wrapper
+				.site-header-wrapper
+					.site-header
+						.contact-phone tel. 663 747 326
+						h1
+							| Noclegi
+							span Tulipan
+						.slogan
+							| Idealne miejsce na wypoczynek. Dom otoczony jest wspaniałymi teranami rekreacyjnymi, będąc jednocześnie tylko 5km od centrum miasta Konin.
+						.clear
+				.site-content-wrapper
+					.content
+						div
+							h2 Serdecznie zapraszamy
+							| Zapraszamy do skorzystania z noclegów w cichej i spokojnej miejscowości położonej w odległości 5 km od centrum Konina.
+							| Oferujemy pokoje dwu, trzy i wieloosobowe z widokiem na lokalną atrakcję - rezerwat przyrody Złota Góra.
+							| We wszystkich pokojach znajdują się telewizory, natomiast w otwartej kuchni mają Państwo możliwość korzystania z kuchenki, piekarnika, mikrofali oraz lodówki.
+						.images
+							a.fancybox(rel='gal', href='/assets/photos/room1.jpg')
+								img(alt='Pokoje Konin', src='/assets/photos/thumb/room1.jpg')
+							a.fancybox(rel='gal', href='/assets/photos/room2.jpg')
+								img(alt='Kwatery pracownicze Konin', src='/assets/photos/thumb/room2.jpg')
+							a.fancybox(rel='gal', href='/assets/photos/garden.jpg')
+								img(alt='Dom Grill Konin', src='/assets/photos/thumb/garden.jpg')
+						div
+							| Do swobodnej dyspozycji gości pozostawiamy również miejsca parkingowe w zamkniętych garażach oraz przestronny ogród z miejscem na grilla i ognisko.
+							| W całym budynku dostępna sieć wi-fi. W pobliżu sklepy spożywcze oraz restauracje. W odległości 20 m od budynku znajduje się przystanek autobusu miejskiego.
+						br
+						div
+							.google-iframe-wrapper
+								iframe.google-iframe(frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='http://mapy.google.pl/maps/ms?msa=0&msid=211353188404189954275.0004b924733d9aecf95ad&ie=UTF8&t=m&ll=52.186984,18.29361&spn=0.126292,0.332336&z=11&output=embed')
+								a.google-link(href='http://mapy.google.pl/maps/ms?msa=0&msid=211353188404189954275.0004b924733d9aecf95ad&ie=UTF8&t=m&source=embed&z=11') Otwórz większą mapę w nowym oknie
+							h2 Jak do nas trafić
+							div
+								| Brzeźno znajduje się dokładnie między centrum Konina a zjazdem z autostrady A2.
+								| Dzięki temu jest łatwo dostępnym, idealnym miejscem na przerwę w czase dłuższej podróży.
+						div
+							h2 Cennik
+							| Koszt noclegu wynosi
+							b 30 zł
+							| od osoby. Dla większych grup atrakcyjne zniżki.
+					.clear
+			.site-footer
+				.copyrights
+					b Copyright Noclegi Tulipan
+					| ,
+					| Leśna 22 Brzeźno, Konin
+					| tel. 663 747 326
+				.created-by
+					a(href='http://www.codespot.pl') wykonanie: Codespot
+			script(type='text/javascript', src='/js/plugins.js')
+			script(type='text/javascript', src='/js/all.js')

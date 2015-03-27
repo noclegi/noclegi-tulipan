@@ -1,11 +1,14 @@
-Express + Jade + Stylus
------------------------
+Noclegi Tulipan
+===============
 
-Small webstack for building static websites
+Small website for tourists looking for sleepplace in Brzeźno and close area.
 
+Development
+-----------
 
-Run:
+Local development without docker
+
 ```
 npm install
-gulp start-server
+node_modules/.bin/gulp start-server
 ```
